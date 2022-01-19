@@ -4,7 +4,7 @@ const About = (props) => {
   return (
     <div>
       <h1 className="mb-5 justify-left sectionName">About:</h1>
-      <div className="about mb-5 d-flex">
+      <div className="about d-flex projRow">
         <div className="d-flex m-3 p-5 align-items-center">
           <img src={Jarhead} className="headshot" />
         </div>
