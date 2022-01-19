@@ -18,7 +18,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run git && npm run build && cd build && cp index.html 200.html && surge jared-malabed.surge.sh",
+    "git": "git add . && git commit -m 'saved by script for deployment purposes' && git push"
   },
   "eslintConfig": {
     "extends": [

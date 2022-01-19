@@ -4,8 +4,8 @@ const About = (props) => {
   return (
     <div>
       <h1 className="mb-5 justify-left sectionName">About:</h1>
-      <div className="about d-flex projRow">
-        <div className="d-flex m-3 p-5 align-items-center">
+      <div className="about d-flex abtRow">
+        <div className="d-flex headshotSpace align-items-center justify-content-center">
           <img src={Jarhead} className="headshot" />
         </div>
         <div className="m-3 p-5">
