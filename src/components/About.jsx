@@ -8,7 +8,7 @@ const About = (props) => {
         <div className="d-flex headshotSpace align-items-center justify-content-center">
           <img src={Jarhead} className="headshot" />
         </div>
-        <div className="m-3 p-5">
+        <div className="aboutText">
           <p>
             I am experienced with: Javascript, React, MongoDB, Python, Django,
             PostgreSQL, HTML & CSS.
