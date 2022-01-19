@@ -6,7 +6,7 @@ import { Container } from "react-bootstrap";
 import { useState } from "react";
 
 function App() {
-  let [isShow, setIsShow] = useState("proj");
+  let [isShow, setIsShow] = useState("about");
 
   const handleAboutClick = () => {
     if (isShow === "proj") setIsShow("about");
