@@ -6,4 +6,4 @@ Created with React and deployed with surge, I re-made this portfolio to include 
 
 It's mobile friendly :)
 
-Access my portfolio at: jared-malabed.surge.sh
+Access my portfolio at: https://jared-malabed.surge.sh
