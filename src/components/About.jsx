@@ -10,14 +10,18 @@ const About = (props) => {
         </div>
         <div className="aboutText">
           <p>
-            I am experienced with: Javascript, React, MongoDB, Python, Django,
-            PostgreSQL, HTML & CSS.
+            I am experienced with: <br />
+            <b>
+              Javascript, React, MongoDB, Python, Django, PostgreSQL, HTML &
+              CSS.
+            </b>
           </p>
           <p>
-            I am a software developer that focuses on communication and
-            constantly learning. From my previous background in mechanical
-            engineering, I have experience in large team coordination,
-            mentorship, problem solving and client interface.
+            I am a software developer that understands the communication and
+            critical thinking that goes into problem solving and delivering a
+            solution as part of a team. From my previous background in
+            mechanical engineering, I have experience in large team
+            coordination, mentorship, problem solving, and client interface.
           </p>
           <p>
             Because I am working on transitioning career paths, I am constantly

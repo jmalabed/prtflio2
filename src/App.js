@@ -7,13 +7,27 @@ import { useState } from "react";
 
 function App() {
   let [isShow, setIsShow] = useState("about");
-
-  const handleAboutClick = () => {
-    if (isShow === "proj") setIsShow("about");
+  let [isHoverP, setIsHoverP] = useState(false);
+  let [isHoverA, setIsHoverA] = useState(false);
+  const mouseEnter = (e) => {
+    if (e.target.id === "about") {
+      setIsHoverA(true);
+    } else {
+      setIsHoverP(true);
+    }
   };
 
-  const handleProjClick = () => {
-    if (isShow === "about") setIsShow("proj");
+  const mouseLeave = (e) => {
+    if (e.target.id === "about") {
+      setIsHoverA(false);
+    } else {
+      setIsHoverP(false);
+    }
+  };
+
+  const handleClick = (e) => {
+    if (e.target.id === "about") setIsShow("about");
+    else setIsShow("proj");
   };
 
   const tabTog = () => {
@@ -29,12 +43,46 @@ function App() {
       <Navbar />
       <hr className="pageDivide" />
       <Container className="d-flex justify-content-between">
-        <h1 onClick={handleProjClick} className="mb-5">
-          <u>My Projects</u>
+        <h1 className="mb-5">
+          {isHoverP ? (
+            <u
+              onClick={handleClick}
+              onMouseEnter={mouseEnter}
+              onMouseLeave={mouseLeave}
+            >
+              <b id="project">My Projects</b>
+            </u>
+          ) : (
+            <u
+              id="project"
+              onClick={handleClick}
+              onMouseEnter={mouseEnter}
+              onMouseLeave={mouseLeave}
+            >
+              My Projects
+            </u>
+          )}
         </h1>
 
-        <h1 onClick={handleAboutClick} className="mb-5">
-          <u>About</u>
+        <h1 className="mb-5">
+          {isHoverA ? (
+            <u
+              onClick={handleClick}
+              onMouseEnter={mouseEnter}
+              onMouseLeave={mouseLeave}
+            >
+              <b id="about">About</b>
+            </u>
+          ) : (
+            <u
+              id="about"
+              onClick={handleClick}
+              onMouseEnter={mouseEnter}
+              onMouseLeave={mouseLeave}
+            >
+              About
+            </u>
+          )}
         </h1>
       </Container>
       {tabTog()}
