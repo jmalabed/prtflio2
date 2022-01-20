@@ -41,9 +41,9 @@ function App() {
   return (
     <Container className="d-flex flex-column align-items-center app">
       <Navbar />
-      <hr className="pageDivide" />
+      <hr className="pageDivideZM" />
       <Container className="d-flex justify-content-between">
-        <h1 className="mb-5">
+        <h3 className="mb-5">
           {isHoverP ? (
             <u
               onClick={handleClick}
@@ -62,9 +62,9 @@ function App() {
               My Projects
             </u>
           )}
-        </h1>
+        </h3>
 
-        <h1 className="mb-5">
+        <h3 className="">
           {isHoverA ? (
             <u
               onClick={handleClick}
@@ -83,8 +83,9 @@ function App() {
               About
             </u>
           )}
-        </h1>
+        </h3>
       </Container>
+
       {tabTog()}
     </Container>
   );

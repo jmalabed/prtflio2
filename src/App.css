@@ -37,6 +37,11 @@ body {
   margin-bottom: 2em;
 }
 
+.pageDivideZM {
+  border: solid 1px black;
+  width: 100%;
+}
+
 .sectionName {
   font-size: 3em;
 }
