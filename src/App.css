@@ -1,6 +1,6 @@
 body {
   font: Arial;
-  font-style: oblique;
+  font-style: normal;
   font-weight: 600;
   letter-spacing: 6px;
 }
@@ -19,7 +19,7 @@ body {
 
 .about {
   letter-spacing: 0px;
-  font-style: italic;
+  font-style: normal;
   font-size: 1.1em;
 }
 
